@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>creditCAlc</class>
+ <widget class="QWidget" name="creditCAlc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>170</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>вернуться </string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>531</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>процент</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDoubleSpinBox" name="sum_credit">
+      <property name="maximum">
+       <double>99999999999999991433150857216.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="procent">
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="time"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Сумма кредита</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>срок</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Тип кредита:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>531</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>переплата по кредиту</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="result_total_pay">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>общая выплата</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="result_overpay">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ежемесячный платеж</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>120</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+  background-color: rgb(250, 250,  250);
+  color: black;
+  border-radius:35px;
+  border: 1px solid gray;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>рассчитать</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="credit_type">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>130</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>аннуитетный</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>дифференцированный</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
